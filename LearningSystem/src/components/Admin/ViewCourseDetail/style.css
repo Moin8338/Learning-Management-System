@@ -1,0 +1,101 @@
+.viewCourseDetail-container {
+    max-width: 1200px;
+    min-height: 600px;
+    overflow-y: scroll;
+    margin: 70px auto 0px auto;
+    background: linear-gradient(
+        135deg,
+        #e7e7f2,
+        #efeef2
+    );
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgb(188, 188, 188);
+    padding: 10px 10px 20px 10px;
+}
+
+
+.viewCourseDetail-container .container{
+
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    width: min(100% - 10px , 1200px);
+    padding: 35px 50px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgba(0,0,0,0.15);
+}
+.viewCourseDetail-container .container .course-vedio,.viewCourseDetail-container .container .course-content{
+    width: 50%;
+}
+.viewCourseDetail-container .container .course-vedio iframe{
+    width: min(100% - 10px, 800px);
+    height: 100%;
+    min-height: 300px;
+}
+.viewCourseDetail-container .container .course-content{
+    padding: .5rem;
+}
+.viewCourseDetail-container .container .course-content h1{
+    color: #6b44df;
+    text-align: left;
+    font-size: 40px;
+}
+.viewCourseDetail-container .container .course-content h4{
+    margin: .2rem 0 .5rem 0;
+}
+.viewCourseDetail-container .container .course-content p{
+    margin-bottom: 1rem;
+}
+.viewCourseDetail-container .container .course-content > div > p{
+    margin-bottom: .2rem;
+}
+.viewCourseDetail-container .container .course-content > div > p > span{
+    color: #6b44df;
+    font-weight: 600;
+    margin-right: .2rem;
+}
+.viewCourseDetail-container .container .course-content button{
+    padding: .3rem 1rem;
+    background: transparent;
+    font-weight: 600;
+    color: #5500cb;
+    border: 2px solid #5500cb;
+    border-radius: 5px;
+    margin-top: .5rem;
+    transition: all .2s ease;
+}
+.viewCourseDetail-container .container .course-content button:hover{
+    background-color: #5500cb;
+    color: white;
+}
+
+.deletebtn{
+    background-color: #5500cb;
+    color:white;
+}
+
+@media screen and (max-width: 950px){
+    .viewCourseDetail-container .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .viewCourseDetail-container .container .course-vedio{
+        width: 100%;
+    }
+    .viewCourseDetail-container .container .course-content{
+        width: 100%;
+    }
+    .viewCourseDetail-container .container .course-content > div{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 950px){
+    .viewCourseDetail-container .container{
+        padding: 10px;
+        width: 100%;
+    }
+    .viewCourseDetail-container .container .course-vedio iframe{
+        height: 100%;
+    }
+}

@@ -1,0 +1,132 @@
+.container1.active{
+    background-color: #f43648;
+}
+.container1
+{
+    background-color: #03a9f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container2
+{
+    width : 800px;
+    height : 500px;
+    margin : 20px;
+    position: relative;
+}
+.bluebg
+{
+    position: absolute;
+    top : 40px;
+    width : 100%;
+    height : 420px;
+    background-color: rgba(255,255,255,0.2) !important;
+    box-shadow: 0 5px 45px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bluebg .box{
+    position: relative;
+    width : 50%;
+    height : 100%;
+    display: flex;
+    
+    background-color: rgba(255,255,255,0.2) !important;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bluebg .box h2
+{
+    color : #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.bluebg .box button
+{
+    cursor: pointer;
+    padding : 10px 20px;
+    background-color: #fff;
+    color : #333;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+}
+.formBx
+{
+    position: absolute;
+    overflow: hidden;
+    top : 0;
+    left : 0 ;
+    width : 50%;
+    height : 100%;
+    background-color: #fff;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 45px rgba(0,0,0,0.25);
+    transition: 0.5s ease-in-out;
+}
+.formBx.active
+{
+    left : 50%;
+}
+.formBx .form{
+    position: absolute;
+    left : 0 ;
+    width : 100%;
+    padding : 50px;
+    transition: 0.5s;
+}
+.formBx .form form
+{
+    width : 100%;
+    display: flex;
+    flex-direction: column;
+}
+.formBx .form form h3
+{
+    font-size: 1.5em;
+    color : #3330 !important;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+.formBx .form form input
+{
+    width : 100%;
+    margin-bottom: 20px;
+    padding : 10px;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid #333;
+}
+.formBx .form form input[type="submit"]
+{
+    background-color: #03a9f4;
+    color : #fff;
+    border : none;
+    max-width: 100px;
+    cursor: pointer;
+}
+.formBx.active .signin
+{
+    left : -100%;
+}
+.formBx .signup
+{
+    left : 100%;
+}
+.formBx.active .signup
+{
+    left : 0 ;
+}
+.formBx.active .signup input[type='submit']
+{
+    background-color: #f43648;
+}
